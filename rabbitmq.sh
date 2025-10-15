@@ -2,6 +2,8 @@
 
 source ./common.sh
 
+check_root
+
 cp $SCRIPT_DIR/rabbitmq.repo /etc/yum.repos.d/rabbitmq.repo &>>$LOG_FILE
 VALIDATE $? "Adding RabbitMQ Repo"
 

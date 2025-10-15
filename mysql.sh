@@ -2,6 +2,8 @@
 
 souce ./common.sh
 
+check_root
+
 dnf install mysql-server -y &>>$LOG_FILE
 VALIDATE $? "Installing MySQL"
 

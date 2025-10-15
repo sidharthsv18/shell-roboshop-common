@@ -2,7 +2,7 @@
 
 source ./common.sh
 
-check_root()
+check_root
 
 cp $SCRIPT_DIR/mongo.repo /etc/yum.repos.d/mongo.repo
 VALIDATE $? "Adding MongoDB Repo"
