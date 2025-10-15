@@ -9,7 +9,7 @@ dnf install maven -y &>>$LOG_FILE
 VALIDATE $? "Installing Maven"
 
 app_setup
-maven_setup
+java_setup
 systemd_setup
 
 dnf install mysql -y  &>>$LOG_FILE
